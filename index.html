@@ -3,7 +3,8 @@
 	  <head>
 	    <meta charset="utf-8">
 	    <script src="https://unpkg.com/npm-require"></script>
-          
+            <script> var module = {} </script>
+            <script src="index.js"></script>
 
 	
 
@@ -16,7 +17,7 @@
     var bel = require('bel')
     var csjs = require('csjs-inject')
    
-		var getGithubData = require('./index.js')  
+    var getGithubData = module.exports
     
     
     //var url = 'https://api.github.com/repos/wizardamigos/profiles/forks'
